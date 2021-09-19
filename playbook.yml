@@ -1,7 +1,6 @@
 ---
-- name: Deploy
-  hosts: devserver
-  gather_facts: false
+- name: User
+  hosts: all
   tasks:
   - name: Apt install docker
     apt:
